@@ -1,0 +1,207 @@
+
+/* ..........................navbar,,,,,,,,,,,,,,,,,,,,,,,,,,  */
+.navbar{
+  /* border: 2px solid red; */
+  height: 4.5rem;
+  display: flex;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+}
+.navbar img{
+  width: 10.5rem;
+  height: 1.5rem;
+
+}
+.navbar input{
+  width: 22.5rem;
+  height: 2.5rem;
+  /* text-align: center; */
+  padding-left: 2rem;
+  background: #F2F2F2;
+  border-radius: 21px;
+  border: none;
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #5C5C5C;
+}
+
+.create_btn{
+  width: 15rem;
+  height: fit-content;
+}
+.create_btn p{
+  margin: 0;
+  display: inline-block;
+}
+.create_btn button {
+  padding: 0;
+  background-color: white;
+  border: none;
+  margin-left: 0.4rem;
+}
+.create_btn a{
+  text-decoration: none;
+  color: #2F6CE5;
+}
+.create_btn button img{
+  height: 0.3rem;
+  width: 0.8rem;
+}
+
+
+
+
+
+/* ...................hero.........................  */
+.hero{
+  max-width: 1440px;
+  width: 100vw;
+  height: 28rem;
+
+  /* background-image: url('../../asset/heroimg.jpeg')  ; */
+
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.899) 0%, rgba(0, 0, 0, 0.883) 100%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+}
+
+.hero img{
+  position: absolute;
+  left: 0rem;
+  height: 28rem;
+  max-width: 1440px;
+  width: 100vw;
+  opacity: 0.5;
+  /* z-index: 1; */
+}
+
+
+.heading_holder{
+  width: 80%;
+  height: fit-content;
+  /* border: 2px solid white; */
+  margin-top: 13rem;
+  z-index: 2;
+}
+
+.heading_holder h1{
+  margin: 0;
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 7;
+  font-size: 2.5rem;
+  line-height: 47px;
+  /* identical to box height */
+
+  color: #FFFFFF;
+
+}
+
+.heading_holder p{
+  margin: 0;
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 23px;
+
+  color: #FFFFFF;
+}
+
+
+
+
+
+/* .............main....................  */
+
+.main_container{
+  /* border: 2px solid red; */
+  height :100rem;
+  width: 80%;
+  max-width: 1250px;
+  margin-top: 1.7rem;
+  padding: 0;
+  display: flex;
+
+}
+
+.work_area{
+  width: 65%;
+  height: 50rem;
+  /* border: 2px solid black; */
+}
+
+.form_area{
+  width: 35%;
+  height: 50rem;
+  /* border: 2px solid green; */
+}
+
+.navbar_2{
+  /* border: 2px solid blue; */
+  box-shadow: 0px 1px 0px 0px
+  #E0E0E0;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.navbar_2 ul {
+  list-style: none;
+  list-style-type: none;
+  /* border: 2px solid blue; */
+  width: 60%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar_2 ul li {
+  display: inline-block;
+  
+}
+
+.navbar_2 ul li a{
+  text-decoration: none;
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+  color: #8A8A8A;
+}
+
+.navbar_2 .firstlink {
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  /* identical to box height */
+
+
+  color: #000000;
+}
+
+.btn_holder {
+  justify-content: space-evenly;
+}
+
+.btn_holder button{
+  width: fit-content;
+  height: 1.7rem;
+  border-radius: 4px;
+}

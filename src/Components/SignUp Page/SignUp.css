@@ -3,6 +3,8 @@
   box-sizing: border-box;
   margin: 0;
 }
+
+
 .SignIn_page{
   display: inline-block;
   width: 736px;
@@ -60,19 +62,19 @@
 }
 
 .main_container{
-  /* border: 2px solid red; */
-  height: 407%;
+  height: fit-content;
+
 }
 
 .form_control{
   /* position: absolute;
   top: 74px; */
-  height: 313px;
+  height: fit-content;
   width: 328px;
 }
 
 .signin_heading{
-  width: 80px;
+  width: 173px;
   height: 31px;
   margin-bottom: 19px;
   font-family: 'IBM Plex Sans';
@@ -87,8 +89,9 @@
 
 .sign_form{
   top: 129px;
-  height: 150px;
+  height: fit-content;
   /* position: relative; */
+  /* border: 2px solid red; */
 
 }
 
@@ -108,6 +111,11 @@
   padding-left: 12px;
 }
 
+.input_name{
+  width: 50%;
+
+}
+
 .sign_form .btn{
   width: 100%;
   background: #2F6CE5;
@@ -117,7 +125,9 @@
 }
 
 .other_option{
-  margin-top: 24px;
+  margin-top: 1.5rem;
+  padding: 0;
+  margin-bottom: 2.3rem;
 }
 
 .other_option .btn{
@@ -163,8 +173,23 @@
 
 .form_control_right a{
   text-decoration: none;
+  color: #2F6CE5;
 }
 
+#Copyright{
+  margin: 1.6rem 0rem;
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.6rem;
+  overflow-x: visible;
+  line-height: 16px;
+
+  letter-spacing: -0.008em;
+
+  color: #000000;
+  opacity: 0.6;
+}
 
 
 
