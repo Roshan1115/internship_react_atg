@@ -1,0 +1,211 @@
+*{
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.SignIn_page{
+  width: 736px;
+  min-height: 457px;
+  left: 352px;
+  top: 186px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  /* position: relative; */
+}
+
+
+
+
+/* header .................................... */
+.header{
+  /* position: absolute; */
+  height: 50px;
+  background: #EFFFF4;
+  border-radius: 8px 8px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_content {
+
+  margin: 0;
+  width: fit-content;
+  height: 16px;
+  left: 411px;
+  top: 203px;
+
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 16px;
+  /* identical to box height, or 114% */
+  color: #008A45;
+
+}
+
+
+
+
+
+/* main ........................................ */
+.main{
+  min-height: 407px;
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+.main_container{
+  /* border: 2px solid red; */
+  height: 407%;
+}
+
+.form_control{
+  /* position: absolute;
+  top: 74px; */
+  height: 313px;
+  width: 328px;
+}
+
+.signin_heading{
+  width: 80px;
+  height: 31px;
+  margin-bottom: 19px;
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+
+  color: #000000;
+
+}
+
+.sign_form{
+  top: 129px;
+  height: 150px;
+  /* position: relative; */
+
+}
+
+._input{
+  width: 100%;
+  height: 46px;
+
+  background: #F7F8FA;
+  border: 1px solid #D9D9DB;
+  border-radius: 2px 2px 0px 0px;
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 16px;
+  color: #8A8A8A;
+  padding-left: 12px;
+}
+
+.sign_form .btn{
+  width: 100%;
+  background: #2F6CE5;
+  border-radius: 20px;
+
+  margin-top: 20px;
+}
+
+.other_option{
+  margin-top: 24px;
+}
+
+.other_option .btn{
+  width: 100%;
+  height: 38px;
+  margin-bottom: 8px;
+  border: 0.6px solid #D9D9DB;
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+
+.other_option img{
+  margin-right: 10px;
+}
+
+
+.form_control_right{
+  /* position: absolute;
+  top: 74px; */
+  height: 350px;
+  width: 328px;
+}
+
+.form_control_right p{
+  width: 280px;
+  height: 17px;
+
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-align: right;
+  margin-top: 5px;
+  color: #3D3D3D;
+}
+
+.form_control_right a{
+  text-decoration: none;
+}
+
+
+
+
+/* media................................................  */
+
+@media (max-width: 724px){
+
+  html{
+    font-size: 80%;
+  }
+
+  .SignIn_page{
+    width: 100vw;
+  }
+
+
+  .main{
+    min-height: 407px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+
+}
+
+
+@media (max-width: 523px){
+
+
+  .header_content {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+
+}
