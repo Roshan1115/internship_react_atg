@@ -8,18 +8,25 @@ import { Link } from 'react-router-dom'
 const SignUpModal = () => {
   return(
     <>
-    <div className={`${st.wrapper}`}>
-      <Homepage />
-    </div>
-    <div className={`${st.another}`}>
-      <Link className={`${st.link}`}
-       to="/internship_react_atg">
-      <ClearIcon />
-      </Link>
-      
-      <SignUp />
-    </div>
+    <div className={`${st.root_div}`}>
 
+      <div className={`${st.tohide}`}>
+
+        <Homepage />
+        </div>
+
+        <div className={`${st.wrapper}`}>
+          <div className={`${st.another}`}>
+            <Link className={`${st.link}`}
+            to="/internship_react_atg">
+            <ClearIcon />
+            </Link>
+            
+            <SignUp />
+          </div>
+        </div>
+
+    </div>
 
     </>
   )
