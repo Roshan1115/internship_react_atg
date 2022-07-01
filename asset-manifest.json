@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/internship_react_atg/static/css/main.a641d3a4.css",
-    "main.js": "/internship_react_atg/static/js/main.abd68058.js",
+    "main.css": "/internship_react_atg/static/css/main.11defa9c.css",
+    "main.js": "/internship_react_atg/static/js/main.6e38150b.js",
     "static/media/img2.png": "/internship_react_atg/static/media/img2.7d1187b79ec39dedd074.png",
     "static/media/img3.png": "/internship_react_atg/static/media/img3.e7b712dd6802663ee2aa.png",
     "static/media/img1.png": "/internship_react_atg/static/media/img1.05a0766a94f571885955.png",
     "static/media/heroimg.jpeg": "/internship_react_atg/static/media/heroimg.35ad99aac4eff32b42fd.jpeg",
     "static/media/Group 3.png": "/internship_react_atg/static/media/Group 3.46aa23444f2e92fad7a9.png",
     "index.html": "/internship_react_atg/index.html",
-    "main.a641d3a4.css.map": "/internship_react_atg/static/css/main.a641d3a4.css.map",
-    "main.abd68058.js.map": "/internship_react_atg/static/js/main.abd68058.js.map"
+    "main.11defa9c.css.map": "/internship_react_atg/static/css/main.11defa9c.css.map",
+    "main.6e38150b.js.map": "/internship_react_atg/static/js/main.6e38150b.js.map"
   },
   "entrypoints": [
-    "static/css/main.a641d3a4.css",
-    "static/js/main.abd68058.js"
+    "static/css/main.11defa9c.css",
+    "static/js/main.6e38150b.js"
   ]
 }
