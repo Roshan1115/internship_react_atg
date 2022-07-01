@@ -145,7 +145,7 @@
 
 .form_area{
   width: 35%;
-  height: 50rem;
+  height: fit-content;
   /* border: 2px solid green; */
 }
 
@@ -254,8 +254,7 @@
 }
 .location p{
   padding: 0;
-  margin: 0;
-  margin-top: 1.5rem;
+  margin: 1.5rem 0rem;
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 400;
