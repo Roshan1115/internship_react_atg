@@ -3,6 +3,7 @@ import './SignIn.css'
 import facebook from '../../asset/f_logo_RGB-Blue_1024.png'
 import google from '../../asset/google.png'
 import ExVector from '../../asset/Group 3.png'
+import { Link } from 'react-router-dom'
 
 
 function SignIn() {
@@ -36,8 +37,9 @@ function SignIn() {
 
           </div>
             
-
+            <Link to='/internship_react_atg'>
             <input class="btn btn-primary" type="submit" value="Submit"></input>
+            </Link>
 
           </form>
             
@@ -62,8 +64,8 @@ function SignIn() {
           <div className="container form_control_right">
 
             <p>Don’t have an account yet? 
-            <a href="#"> Create new for free!
-            </a>
+            <Link to="/internship_react_atg/signup"> Create new for free!
+            </Link>
             </p>
 
             <img src={ExVector} alt="" />

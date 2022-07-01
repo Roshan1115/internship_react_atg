@@ -1,9 +1,12 @@
 import React from 'react'
 import homepage from './Homepage.module.css'
+import Card from '../Card/Card'
+import CardData from '../Card/Card Data/CardData'
 import atglogo from '../../asset/atglogo.png'
 import Downarrow from '../../asset/down.png'
 import heroImg from '../../asset/heroimg.jpeg'
-// import SearchIcon from '../../asset/search-icon.png'
+import { Link } from 'react-router-dom'
+import EditIcon from '@mui/icons-material/Edit';
 
 
 function Homepage() {
@@ -21,7 +24,8 @@ function Homepage() {
 
       <p>
         Create Account. 
-        <a href="#signup"> It's Free! </a>
+        <Link
+         to="/internship_react_atg/signup"> It's Free! </Link>
       </p>
 
       <button>
@@ -71,26 +75,49 @@ function Homepage() {
         <li><a href="#">Education</a></li>
         <li><a href="#">Job</a></li>
       </ul>
-
       </div>
 
 
+        {/* ............CARD........ */}
+        {
+          CardData.map((data) => (
+            <Card Data={data} />        
+          ))
+        }
+       
 
 
       </div>
 
       <div className={`${homepage.form_area}`}>
 
-
         <div className={`${homepage.navbar_2} ${homepage.btn_holder} `}>
+        <div className={`${homepage.btncomp}`}>
 
-        <button type="button" class={`btn btn-primary btn-sm ${homepage.btn_1}`}>Primary</button>
+          <button type="button" class={`btn btn-primary btn-sm ${homepage.btn_1}`}>Write a Post</button>
 
-        <button type="button" class={`btn btn-light btn-sm ${homepage.btn_2}`}>Light</button>
+          <button type="button" class={`btn btn-light btn-sm ${homepage.btn_2}`}>Join Group</button>
 
         </div>
 
+        </div>
 
+        <div className={`${homepage.location}`}>
+
+    
+        <div className={`${homepage.input_control}`}>
+
+          <input type="text" value="Noida, India" />
+
+          <EditIcon />
+
+        </div>
+
+          <p>
+          Your location will help us serve better and extend a personalised experience.
+          </p>
+
+        </div>
 
       </div>
     </div>

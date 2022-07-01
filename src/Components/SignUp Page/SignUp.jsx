@@ -3,7 +3,7 @@ import './SignUp.css'
 import facebook from '../../asset/f_logo_RGB-Blue_1024.png'
 import google from '../../asset/google.png'
 import ExVector from '../../asset/Group 3.png'
-
+import { Link } from 'react-router-dom'
 
 function SignUp() {
 
@@ -22,16 +22,16 @@ function SignUp() {
 
         <div className="container-fluid signform main_container"> 
           
-        <div className="container form_control">
+        <div className="container form_control2">
 
-          <h1 className='signin_heading'>Create Account</h1>
+          <h1 className='signin_heading2'>Create Account</h1>
 
 
 
-          <form className='sign_form' action="#">
+          <form className='sign_form2' action="#">
           <div className="inputholder">
 
-              <input className='_input input_name'         type="text" placeholder='First Name' />
+              <input className='_input input_name' type="text" placeholder='First Name' />
               <input className='_input input_name' type="text" placeholder='Last Name' />
               <input className='_input'         type="text" placeholder='Email' />
               <input className='_input' type="text" placeholder='Password' />
@@ -40,12 +40,13 @@ function SignUp() {
 
           </div>
             
-
+            <Link to='/internship_react_atg'>
             <input class="btn btn-primary" type="submit" value="Submit"></input>
+            </Link>
 
           </form>
             
-            <div className="container other_option">
+            <div className="container other_option2">
 
             <button class="btn" >
             <img src={facebook} alt="" />
@@ -63,11 +64,11 @@ function SignUp() {
         </div>
         <div className="container-fluid svg_vectors main_container">
 
-          <div className="container form_control_right">
+          <div className="container form_control_right2">
 
-            <p ckassName="para_right">Already have an account?
-            <a href="#"> Sign In
-            </a>
+            <p id="para_right2">Already have an account?
+            <Link to="/internship_react_atg/signin"> Sign In
+            </Link>
             </p>
 
             <img src={ExVector} alt="" />

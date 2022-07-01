@@ -1,14 +1,27 @@
 import React from 'react'
-// import SignIn from './Components/SignIn Page/SignIn'
-// import SignUp from './Components/SignUp Page/SignUp'
+import {Routes, Link, Route, BrowserRouter} from 'react-router-dom'
 import Homepage from './Components/Homepage/Homepage'
+import SignUpModal from './Components/Sign Modal/SignUpModal'
+import SignInModal from './Components/Sign Modal/SignInModal'
 
 function App() {
   return (
     <>
-    <Homepage />
-    {/* <SignIn/> */}
-    {/* <SignUp /> */}
+  <BrowserRouter>
+
+    <Routes>
+      <Route exact path="/internship_react_atg" element={<Homepage />} />
+      <Route exact path="/internship_react_atg/signup" element={<SignUpModal />} />
+      <Route exact path="/internship_react_atg/signin" element={<SignInModal />} />
+    </Routes>
+
+      {/* <SignIn />
+      <SignUp /> */}
+
+    </BrowserRouter>
+
+
+
     </>
   )
 }

@@ -127,18 +127,19 @@
 
 .main_container{
   /* border: 2px solid red; */
-  height :100rem;
+  padding: 0rem 0.5rem;
   width: 80%;
+  min-width: 700px;
   max-width: 1250px;
   margin-top: 1.7rem;
-  padding: 0;
   display: flex;
 
 }
 
 .work_area{
   width: 65%;
-  height: 50rem;
+  height: fit-content;
+  margin-bottom: 2rem;
   /* border: 2px solid black; */
 }
 
@@ -155,6 +156,7 @@
   height: 3.5rem;
   display: flex;
   align-items: center;
+  margin-bottom: 1.5rem;
 }
 
 .navbar_2 ul {
@@ -178,8 +180,8 @@
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
+  font-size: 1rem;
+  /* line-height: 21px; */
   /* identical to box height */
   color: #8A8A8A;
 }
@@ -188,8 +190,8 @@
   font-family: 'IBM Plex Sans';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
+  font-size: 1rem;
+  /* line-height: 21px; */
   /* identical to box height */
 
 
@@ -197,11 +199,155 @@
 }
 
 .btn_holder {
-  justify-content: space-evenly;
+  flex-direction: row-reverse;
+  padding-right: 1rem;
+}
+
+.btncomp{
+  width: 50%;
+  min-width: 13rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .btn_holder button{
   width: fit-content;
   height: 1.7rem;
   border-radius: 4px;
+  border: none;
 }
+
+.btn_holder .btn_1{
+  background: #EDEEF0;
+  color: black;
+}
+
+.btn_holder .btn_2{
+  background: #2F6CE5;
+  color: white;
+}
+
+.location{
+  padding-left: 5rem;
+  padding-right: 1rem;
+  /* text-align: right; */
+  /* border: 2px solid black; */
+}
+
+.input_control{
+  /* padding-left: 4rem; */
+  width: 100%;
+  overflow-x: hidden;
+  margin-top: 0.5rem;
+  display: inline-block;
+  box-shadow: 0px 1px 0px 0px #B8B8B8;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input_control input{
+  width: 80%;
+  font-family: 'IBM Plex Sans';
+  font-size: 1rem;
+  border: none;
+
+}
+.location p{
+  padding: 0;
+  margin: 0;
+  margin-top: 1.5rem;
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9rem;
+  opacity: 0.5;
+}
+
+
+/* ..........media querry.............................  */
+
+@media (max-width: 700px) {
+  html{
+    font-size: 80%;
+  }
+
+  .main_container{
+    flex-direction: column;
+    min-width: 100%;
+  }
+
+  .work_area{
+    width: 100%;
+  }
+
+  .form_area{
+    width: 100%;
+  }
+
+  .btn_holder{
+    justify-content: center;
+  }
+  .btn_holder button{
+    margin: 0rem 1rem;
+  }
+
+  .btncomp{
+    justify-content: center;
+  }
+  .location{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .input_control{
+    width: 50%;
+  }
+  .location p{
+    width: 50%;
+  }
+}
+
+
+
+@media (max-width: 575px){
+
+  .navbar input{
+    display: none;
+  }
+  .btn_holder{
+    justify-content: start;
+  }
+
+  .location{
+    padding: 0rem 1.5rem;
+  }
+  .input_control{
+    width: 100%;
+  }
+  .location p{
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 400px){
+  html{
+    font-size: 65%;
+  }
+
+  .navbar_2{
+    margin-bottom: 2rem;
+  }
+
+  .navbar input{
+    display: none;
+  }
+
+  .navbar_2 ul {
+    width: 100%;
+
+  }
+}
+
+
